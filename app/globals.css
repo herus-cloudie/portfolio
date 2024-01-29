@@ -1,0 +1,347 @@
+.container{
+    width: 1440px;
+    height: 990px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+aside{
+    width: 104px;
+    height: 990px;
+}
+header{
+    width: 1163px;
+    height: 31px;
+    top: 43px;
+    left: 177px;
+    position: absolute;
+    display: flex !important;
+    justify-content: space-between;
+    text-align: center;
+
+}
+ul{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 42px;
+}
+.portfolio{
+    padding-bottom: 5px;
+    border-bottom: solid 3px;
+}
+.li{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.call{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    color: #F1214F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.5%; 
+    letter-spacing: -0.8px;
+}
+.column{
+    width: 1px;
+    height: 990px;
+    left: 104px;
+    background: #DEE1E6;
+    position: absolute;
+    transform: rotate(-180deg);
+}
+.brand{
+    color: #000;
+    font-family: cursive;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.5%;
+    letter-spacing: -4.16px;
+    width: 37px;
+    height: 67px;
+    top: 16px;
+    left: 29px;
+    position: fixed;
+}
+.brand-small{
+    color: #F1214F;
+    font-family: cursive;
+    top: 51px;
+    font-size: 21px;
+    left: 69px;
+    position: fixed;
+}
+
+.social{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    top: 580px;
+    left: 43px;
+    position: fixed;
+}
+.github svg{
+    color: #f3a100;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+.linkedin svg{
+    color: #1783a4;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+.telegram svg{
+    color: #1198e6;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* *-----------------------------------------------------------------------* main */
+
+main .hero-text{
+    width: 586px;
+    height: 247px;
+    top: 264px;
+    left: 170px;
+    position: absolute;
+    color: rgba(56, 56, 56, 1);
+}
+.hithere{
+    width: 91px;
+    height: 28px;
+    top: 10px;
+    left: 177px;
+    position: absolute;
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-text{
+    top: 20px;
+    width: 900px;
+    left: 170px;
+    position: absolute;
+    display: flex;
+    color: #383838;
+    font-size: 102px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 129.5%;
+    letter-spacing: -2px;
+}
+.redR{
+    color: #F1214F;
+    font-size: 102px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 129.5%;
+}
+.cloak{
+    width: 35px;
+    height: 35px;
+    top: 220px;
+    left: 530px;
+    position: absolute;
+}
+.main-text-h3{
+    width: 583px;
+    height: 67px;
+    top: 150px;
+    left: 170px;
+    position: absolute;
+    color: #383838;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.5%; /* 67.34px */
+    letter-spacing: -2.16px;
+}
+.main-text-h4{
+    width: 583px;
+    height: 67px;
+    font-family: cursive;
+    top: 240px;
+    left: 350px;
+    position: absolute;
+    color: #333333d9;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 129.5%;
+    letter-spacing: -0.56px;
+}
+.button-49,
+.button-49:after {
+  width: 200px;
+  height: 86px;
+  line-height: 88px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #F1214F 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #333;
+  outline: transparent;
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  top: 320px;
+  left: 170px;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.hero-img{
+    /* width: 583px;
+    height: 67px; */
+    top: 150px;
+    left: 970px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.email{
+    width: 170px;
+    height: 56px;
+    top: 800px;
+    left: 300px;
+    position: absolute;
+}
+.email h5{
+    color: #383838;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 129.5%; /* 28.49px */
+}
+.email p{
+    font-size: 17px;
+    line-height: normal;
+}
+.location{
+    width: 165px;
+    height: 56px;
+    top: 800px;
+    left: 770px;
+    position: absolute;
+}
+
+.location h5{
+    color: #383838;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 129.5%; /* 28.49px */
+}
+.location p{
+    font-size: 17px;
+}
+.placeholder{
+    width: 35px;
+    height: 35px;
+    top: 7px;
+    left: -60px;
+    position: absolute;
+}
+.gmail{
+    width: 35px;
+    height: 35px;
+    top: 7px;
+    left: -60px;
+    position: absolute;
+}
+.contact-column{
+    width: 1px;
+    height: 52px;
+    opacity: 0.3;
+    top: 800px;
+    left: 600px;
+    position: absolute;
+    background: #383838;
+}
