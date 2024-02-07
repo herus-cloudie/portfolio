@@ -1,14 +1,22 @@
 .container{
-    width: 1440px;
-    height: 990px;
+    height: 2390px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 aside{
     width: 104px;
     height: 990px;
 }
+.menu svg{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -10px;
+    left: 420px;
+    display: none;
+    color: #000;
+}
 header{
-    width: 1163px;
+    max-width: 1440px;
     height: 31px;
     top: 43px;
     left: 177px;
@@ -27,6 +35,7 @@ ul{
     padding-bottom: 5px;
     border-bottom: solid 3px;
 }
+
 .li{
     color: #000;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -49,6 +58,7 @@ ul{
     font-weight: 400;
     line-height: 129.5%; 
     letter-spacing: -0.8px;
+    width: 116px;
 }
 .column{
     width: 1px;
@@ -117,9 +127,26 @@ main .hero-text{
     width: 586px;
     height: 247px;
     top: 264px;
-    left: 170px;
+    left: 50px;
     position: absolute;
     color: rgba(56, 56, 56, 1);
+}
+.hero-img{
+    width: 500px;
+    top: 150px;
+    left: 850px;
+    position: absolute;
+    border-radius: 220px;
+}
+.hero-img-bg{
+    background-color: #f1214fb5;
+    transform: rotate(20deg);
+    width: 250px;
+    height: 624px;
+    position: absolute;
+    top: 147px;
+    border-radius: 10px;
+    left: 1055px;
 }
 .hithere{
     width: 91px;
@@ -135,7 +162,7 @@ main .hero-text{
 }
 .main-text{
     top: 20px;
-    width: 900px;
+    width: 475px;
     left: 170px;
     position: absolute;
     display: flex;
@@ -174,7 +201,7 @@ main .hero-text{
     letter-spacing: -2.16px;
 }
 .main-text-h4{
-    width: 583px;
+    /* width: 601px; */
     height: 67px;
     font-family: cursive;
     top: 240px;
@@ -280,14 +307,6 @@ main .hero-text{
   }
 }
 
-.hero-img{
-    /* width: 583px;
-    height: 67px; */
-    top: 150px;
-    left: 970px;
-    position: absolute;
-    border-radius: 10px;
-}
 
 .email{
     width: 170px;
@@ -312,6 +331,7 @@ main .hero-text{
     height: 56px;
     top: 800px;
     left: 770px;
+    width: 5px;
     position: absolute;
 }
 
@@ -319,10 +339,12 @@ main .hero-text{
     color: #383838;
     font-size: 22px;
     font-style: normal;
+    width: 5px;
     font-weight: 900;
     line-height: 129.5%; /* 28.49px */
 }
 .location p{
+    max-width: 101px;
     font-size: 17px;
 }
 .placeholder{
@@ -402,7 +424,8 @@ main .hero-text{
     border-radius: 5px;
 }
 
-.aboutme-title{ display: flex;
+.aboutme-title{
+    display: flex;
     top: 40px;
     gap: 8px;
     left: 60px;
@@ -461,13 +484,15 @@ main .hero-text{
     left: -65px;
     position: absolute;
 }
-
+.aboutme-red{
+    color: #F1214F;
+    font-size: 50px;
+}
 .me2{
-    width: 250px;
     height: 250px;
-    top: 125px;
-    left: 30px;
-    border-radius: 80px;
+    top: 80px;
+    left: 60px;
+    border-radius: 15px;
     position: absolute;
 }
 
@@ -505,12 +530,18 @@ main .hero-text{
         left: 900px;
     }
     main .hero-text{
-        left: 110px;
+        left: 80px;
         position: absolute;
     }
     .hero-img{
-        left: 870px;
+        left: 800px;
         position: absolute;
+    }
+    .hero-img-bg{
+        position: absolute;
+        top: 147px;
+        border-radius: 10px;
+        left: 1005px;
     }
     .row {
         width: 1px;
@@ -519,9 +550,7 @@ main .hero-text{
         top: 470px;
         position: absolute;
     }
-}
-@media (max-width : 1400px) {
-    .skills{
+        .skills{
         top: 990px;
         left: 520px;
         position: absolute;
@@ -541,6 +570,7 @@ main .hero-text{
         left: 400px;
         justify-content: space-around;
     }
+
     .icons-skills{
         width: 500px;
         display: flex;
@@ -550,52 +580,89 @@ main .hero-text{
         left: 400px;
         justify-content: space-around;
     }
+    .About {
+        top: 1400px;
+        left: 265px;
+        position: absolute;
+    }
 }
-
+@media (max-width : 1400px) {
+ 
+    .hero-img-bg{
+        position: absolute;
+        width: 200px;
+        /* left: 980px; */
+    }
+}
 @media (max-width : 1350px) {
+    .hero-img{
+        width: 400px;
+        left: 800px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        position: absolute;
+        width: 173px;
+        height: 405px;
+        top: 158px;
+        border-radius: 10px;
+        left: 991px;
+    }
     main .hero-text{
         left: 0px;
         position: absolute;
     }
-    .hero-img{
-        left: 820px;
-        position: absolute;
-    }
-}
 
+}
 @media (max-width : 1300px) {
     main .hero-text{
-        top: 300px;
-        left: 40px;
+        top: 480px;
+        left: 167px;
         position: absolute;
     }
     .hero-img{
-        width: 200px;
-        height: 260px;
-        top: 180px;
-        left: 720px;
+        width: 270px;
+        top: 130px;
+        left: 540px;
         position: absolute;
     }
-}
-
-@media (max-width : 1250px) {
-    .call{
+    .hero-img-bg{
         position: absolute;
+        height: 323px;
+        top: 130px;
+        width: 129px;
+        left: 656px;
+    }
+    .email{
+        width: 170px;
+        height: 56px;
+        top: 970px;
+        left: 400px;
+        position: absolute;
+    }
+    .location{
+        width: 170px;
+        height: 56px;
+        top: 970px;
         left: 800px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 675px;
+        position: absolute;
     }
     .row {
         width: 1px;
-        height: 771px;
-        left: 590px;
-        top: 530px;
+        height: 809px;
+        left: 664px;
+        top: 669px;
         position: absolute;
+    
     }
-}
-
-@media (max-width : 1200px) {
     .skills{
-        top: 990px;
-        left: 440px;
+        top: 1140px;
+        left: 515px;
         position: absolute;
         color: #383838;
         font-size: 65px;
@@ -609,8 +676,8 @@ main .hero-text{
         display: flex;
         flex-direction: row-reverse;
         position: absolute;
-        top: 1140px;
-        left: 320px;
+        top: 1300px;
+        left: 385px;
         justify-content: space-around;
     }
     .icons-skills{
@@ -618,112 +685,627 @@ main .hero-text{
         display: flex;
         flex-direction: row-reverse;
         position: absolute;
-        top: 1240px;
-        left: 320px;
+        top: 1400px;
+        left: 385px;
         justify-content: space-around;
     }
+    .call{
+        position: absolute;
+        left: 750px;
+    }  
+    .About{
+        top: 1519px;
+        left: 254px;
+        position: absolute;
+    }
 }
+@media (max-width : 1250px) {
+}
+@media (max-width : 1200px) {
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 480px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        left: 600px;
+        position: absolute;
+    }
+    .skills{
+        top: 1140px;
+        left: 470px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 340px;
 
+    }
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 340px;
+        position: absolute;
+    }
+    .About {
+        top: 1520px;
+        left: 200px;
+        position: absolute;
+    }
+    .email{
+        width: 170px;
+        height: 56px;
+        top: 970px;
+        left: 350px;
+        position: absolute;
+    }
+    .location{
+        width: 170px;
+        height: 56px;
+        top: 970px;
+        left: 750px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 625px;
+        position: absolute;
+    }
+    .row {
+        width: 1px;
+        height: 809px;
+        left: 620px;
+        top: 669px;
+        position: absolute;
+    }
+}
 @media (max-width : 1150px) {
+
+}
+@media (max-width : 1100px) {
+    .call{
+        position: absolute;
+        left: 600px;
+    }
+    .row {
+        left: 560px;
+        top: 715px;
+        height: 700px;
+        position: absolute;
+    }
+    .email{
+        width: 170px;
+        height: 56px;
+        top: 970px;
+        left: 300px;
+        position: absolute;
+    }
+    .location{
+        width: 170px;
+        height: 56px;
+        top: 970px;
+        left: 700px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 585px;
+        position: absolute;
+    }
+    main .hero-text {
+        top: 500px;
+        left: 120px;
+        position: absolute;
+    }
+    .skills{
+        top: 1140px;
+        left: 420px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 290px;
+
+    }
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 410px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        left: 530px;
+        position: absolute;
+    }
+
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 290px;
+        position: absolute;
+    }
+    .About{
+        position: absolute;
+        top: 1515px;
+        left: 155px;
+    }
+}
+@media (max-width : 1050px) {
     .call{
         position: absolute;
         left: 600px;
     }
 }
-
-@media (max-width : 1100px) {
-    
-}
-
-@media (max-width : 1050px) {
-    .row {
-        width: 1px;
-        height: 771px;
-        left: 590px;
-        top: 530px;
+@media (max-width : 1000px) {
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 370px;
         position: absolute;
     }
-}
-
-@media (max-width : 1000px) {
+    .hero-img-bg{
+        left: 480px;
+        position: absolute;
+    }
+    main .hero-text {
+        top: 500px;
+        left: 75px;
+        position: absolute;
+    }
     .row {
-        width: 1px;
-        height: 664px;
-        left: 550px;
-        top: 575px;
+        left: 520px;
+        top: 715px;
+        height: 700px;
+        position: absolute;
+    }
+    .About{
+        position: absolute;
+        width: 500px;
+        top: 1515px;
+        left: 225px;
+        height: 430px;
+    }
+    .me2 {
+        height: 160px;
+        top: -25px;
+        left: 400px;
+        border-radius: 15px;
+        position: absolute;
+    }
+    .paragraph{
+        width: 422px;
+        top: 150px;
+        left: 110px;
+        position: absolute;
+        color: #383838;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 129.5%;
+        padding: 8px 0 8px 0;
+    }    
+    .paragraph h5 {
+        left: 30px;
+        position: absolute;
+    }
+} 
+@media (max-width : 950px) {
+    .call{
+        position: absolute;
+        left: 500px;
+    }
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 330px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        left: 440px;
+        position: absolute;
+    }
+    main .hero-text {
+        top: 500px;
+        left: 35px;
+        position: absolute;
+    }
+    .row {
+        left: 500px;
+        top: 769px;
+        height: 600px;
+        position: absolute;
+    }
+    .email{
+        top: 970px;
+        left: 250px;
+        position: absolute;
+    }
+    .location{
+        top: 970px;
+        left: 650px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 525px;
         position: absolute;
     }
     .skills{
-        top: 990px;
-        left: 385px;
+        top: 1140px;
+        left: 335px;
         position: absolute;
-        color: #383838;
-        font-size: 65px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 129.5%;
-        letter-spacing: -2px;
     }
     .icons-style{
         width: 500px;
-        display: flex;
-        flex-direction: row-reverse;
         position: absolute;
-        top: 1140px;
-        left: 270px;
-        justify-content: space-around;
+        top: 1290px;
+        left: 220px;
+
     }
     .icons-skills{
         width: 500px;
-        display: flex;
-        flex-direction: row-reverse;
+        
+        top: 1390px;
+        left: 220px;
         position: absolute;
-        top: 1240px;
-        left: 270px;
-        justify-content: space-around;
     }
     .About{
-        width: 700px;
-        height: 400px;
-        top: 1400px;
-        left: 120px;
+
         position: absolute;
-        padding: 50px;
-        border: thick double #33333335;
+        width: 500px;
+        left: 175px;
     }
-}
-
-@media (max-width : 950px) {
-    .call{
-        display: none !important;
-    }
-
-}
-
-@media (max-width : 900px) {
-    
 }
 
 @media (max-width : 850px) {
-    
+    .call{
+        display: none;
+    }
+    .column{
+        display: none;
+    }
+    .brand-small{
+        position: relative;
+        top: -15px;
+        left: 69px;
+    }
+
+    .social{
+        background-color: white;
+        z-index: 1030;
+        padding: 10px;
+        border-radius: 10px;
+        top: 580px;
+        left: 20px;
+        position: fixed;
+    }
+
+    .brand{
+        position: relative;
+    }
+    .hero-img{
+        width: 270px;
+        top: 140px;
+        left: 270px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        top: 150px;
+        left: 380px;
+        position: absolute;
+    }
+    main .hero-text {
+        top: 500px;
+        left: -20px;
+        position: absolute;
+    }
+    .row {
+        left: 500px;
+        top: 769px;
+        height: 650px;
+        position: absolute;
+    }
+    .email{
+        top: 970px;
+        left: 200px;
+        position: absolute;
+    }
+    .location{
+        top: 970px;
+        left: 600px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 470px;
+        position: absolute;
+    }
+    .skills{
+        top: 1140px;
+        left: 285px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 170px;
+
+    }
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 170px;
+        position: absolute;
+    }
+    .About{
+        position: absolute;
+        width: 500px;
+        left: 125px;
+    }
+    .row {
+        left: 410px;
+        top: 770px;
+        height: 600px;
+        position: absolute;
+    }
 }
+
 
 @media (max-width : 800px) {
+    .row {
+        left: 380px;
+        top: 780px;
+        height: 550px;
+        position: absolute;
+    }
+    .hero-img{
+        width: 270px;
+        top: 140px;
+        left: 220px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        top: 150px;
+        left: 330px;
+        position: absolute;
+    }
+    main .hero-text {
+        top: 500px;
+        left: -70px;
+        position: absolute;
+    }
+    .email{
+        top: 970px;
+        left: 150px;
+        position: absolute;
+    }
+    .location{
+        top: 970px;
+        left: 550px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 420px;
+        position: absolute;
+    }
+    .skills{
+        top: 1140px;
+        left: 235px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 120px;
+    }
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 120px;
+        position: absolute;
+    }
+    .About{
+        position: absolute;
+        width: 500px;
+        left: 75px;
+    }
+
+
+}
+@media (max-width : 750px) {
+    .menu svg{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    .hithere{
+        font-size: 19px;
+    }
+    main .main-text {
+        font-size: 80px;
+        /* top: 500px;
+        left: 35px; */
+        position: absolute;
+    }
+    .redR{
+        font-size: 80px;
+    }
+    .main-text-h3{
+        top: 110px;
+        left: 170px;
+        width: 450px;
+        position: absolute;
+        font-size: 41px;
+    }
+    .main-text-h4{
+        top: 180px;
+        left: 310px;
+        position: absolute;
+        font-size: 21px;
+    }
+    .button-49 {
+        position: absolute;
+        font-size: 18px;
+        top: 265px;
+        left: 170px;
+    }
     
+
+    .email{
+        top: 970px;
+        left: 120px;
+        position: absolute;
+    }
+    .location{
+        top: 970px;
+        left: 520px;
+        width: 5px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 390px;
+        position: absolute;
+    }
+    .email h5{
+        font-size: 19px;
+    }
+    .email p{
+        font-size: 15px;
+    }
+    .row {
+        left: 355px;
+        top: 800px;
+        height: 500px;
+        position: absolute;
+    }
+
+    .location h5{
+        font-size: 19px;
+    }
+    .location p{
+        font-size: 15px;
+    }
+    .placeholder{
+        width: 28px;
+        height: 28px;
+    }
+    .gmail{
+        width: 28px;
+        height: 28px;
+    }
+    .About {
+        position: absolute;
+        width: 500px;
+        left: 50px;
+        padding: 40px;
+    }
+    .skills{
+        top: 1140px;
+        left: 210px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 100px;
+    }
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 100px;
+        position: absolute;
+    }
 }
 
-@media (max-width : 750px) {
-    
-}
+
+
 @media (max-width : 700px) {
-    
+    .menu svg{
+        position: absolute;
+        top: -10px;
+        left: 380px;
+    }
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 200px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        left: 310px;
+        position: absolute;
+    }    
+    .About{
+        position: absolute;
+        width: 500px;
+        left: 80px;
+        padding: 40px 0px;
+    }
+    .me2{
+        height: 120px;
+        top: -10px;
+        left: 340px;
+        position: absolute;
+    }
+    .paragraph {
+        top: 130px;
+        left: 50px;
+        position: absolute;
+    }
+    .paragraph h5 {
+        left: 50px;
+        position: absolute;
+    }
+    .aboutme-title{
+        font-size: 40px;
+    }
+    .aboutme-red{
+        font-size: 40px;
+    }
+    .skills{
+        top: 1140px;
+        left: 200px;
+        position: absolute;
+    }
+    .icons-style{
+        width: 500px;
+        position: absolute;
+        top: 1290px;
+        left: 90px;
+    }
+    .icons-skills{
+        width: 500px;
+        top: 1390px;
+        left: 90px;
+        position: absolute;
+    }
 }
 @media (max-width : 650px) {
-    
+    .hero-img{
+        width: 270px;
+        top: 130px;
+        left: 175px;
+        position: absolute;
+    }
+    .hero-img-bg{
+        left: 285px;
+        position: absolute;
+    } 
 }
 @media (max-width : 600px) {
     
 }
 @media (max-width : 550px) {
     
-}
+}  

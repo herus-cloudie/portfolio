@@ -2,7 +2,7 @@ import Phone from "@/component/module/phone";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTelegram } from "react-icons/bs";
-import { AiFillHtml5 } from "react-icons/ai";
+import { BiMenu } from "react-icons/bi";
 export default function Home() {
 
   return (
@@ -18,6 +18,7 @@ export default function Home() {
         <div className="column"/>
       </aside>
       <header>
+        <a href="#" className="menu"> <BiMenu /> </a>
         <ul>
           <a href="#" className="li portfolio">portfolio</a>
           <a href="#" className="li">my skills</a>
@@ -37,6 +38,7 @@ export default function Home() {
           <h4 className="main-text-h4">& work with batman during nights.</h4>
           <button class="button-49" role="button">See Portfolio</button>
         </div>
+        <div className="hero-img-bg" />
         <img src="/me.png" className="hero-img"/>
       </main>
       <div>
@@ -70,8 +72,8 @@ export default function Home() {
       </div>
       <div className="About">
         <div className="aboutme">
-          <h2 className="aboutme-title">About <span style={{fontSize : '50px'}} className="redR">me</span></h2>
-          <img className="me2" src="/me2.png"/>
+          <h2 className="aboutme-title">About <span className="aboutme-red">me</span></h2>
+          <img className="me2" src="/me1.png"/>
         </div>
         <div className="paragraph">
           My name is Amir Mohammad Moslemi but you can call me <span style={{fontSize : '18px'}} className="redR">Herus</span>,  I'm 18 years old.
