@@ -1763,7 +1763,7 @@ main .hero-text{
 @media (max-width : 425px) {
     .About {
         position: absolute;
-        left: 15px;
+        left: 20px;
     }
     .row {
         left: 190px;
@@ -1791,20 +1791,7 @@ main .hero-text{
         left: -130px;
         position: absolute;
     }
-    .skills {
-        position: absolute;
-        left: 115px;
-    }
-    .icons-style {
-        width: 350px;
-        position: absolute;
-        left: 15px;
-    }
-    .icons-skills {
-        width: 350px;
-        position: absolute;
-        left: 15px;
-    }
+
 }
 @media (max-width : 400px) {
     .paragraph {
@@ -1843,6 +1830,38 @@ main .hero-text{
         height: 300px;
         top: 838px;
     }
+    .skills {
+        position: absolute;
+        left: 115px;
+    }
+    .icons-style {
+        width: 350px;
+        position: absolute;
+        left: 15px;
+    }
+    .icons-skills {
+        width: 350px;
+        position: absolute;
+        left: 15px;
+    }
+    .email {
+        left: 110px;
+        position: absolute;
+    }
+}
+@media (max-width : 385px) {
+    .paragraph {
+        left: 35px;
+        position: absolute;
+    }
+    .About {
+        width: 325px;
+        position: absolute;
+        left: 10px;
+    }
+
+
+
     .skills {
         position: absolute;
         left: 105px;
