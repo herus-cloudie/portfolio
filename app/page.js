@@ -36,12 +36,12 @@ export default function Home() {
           <h1 className="main-text">I'm He<p className="redR">r</p>us</h1>
           <h3 className="main-text-h3">Front-end developer during daytime</h3>
           <h4 className="main-text-h4">& work with batman during nights.</h4>
-          <button class="button-49" role="button">See Portfolio</button>
+          <button class="button-49" role="button"><p>See portfolio</p></button>
         </div>
         <div className="hero-img-bg" />
         <img src="/me.png" className="hero-img"/>
       </main>
-      <div>
+      <div className="contact-group">
         <div className="email">
           <h5>Email</h5>
           <p>herus2006crypto@gmail.com</p>
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       <div className="row"/>
-      <div>
+      <div className="skills-group">
         <h3 className="skills">My skills</h3>
         <div className="icons-style">
           <div className="icon"><img src="/html.png" /></div>

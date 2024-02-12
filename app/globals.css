@@ -1,3 +1,4 @@
+
 .container{
     height: 2390px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -124,7 +125,7 @@ a{
 /* *-----------------------------------------------------------------------* main */
 
 main .hero-text{
-    width: 586px;
+    /* width: 586px; */
     height: 247px;
     top: 264px;
     left: 50px;
@@ -201,16 +202,16 @@ main .hero-text{
     letter-spacing: -2.16px;
 }
 .main-text-h4{
-    /* width: 601px; */
+    width: 601px;
     height: 67px;
-    font-family: cursive;
+    font-family: monospace;
     top: 240px;
     left: 350px;
     position: absolute;
     color: #333333d9;
-    font-size: 25px;
+    font-size: 27px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 129.5%;
     letter-spacing: -0.56px;
 }
@@ -344,7 +345,7 @@ main .hero-text{
     line-height: 129.5%; /* 28.49px */
 }
 .location p{
-    max-width: 101px;
+    width: 158px;
     font-size: 17px;
 }
 .placeholder{
@@ -461,14 +462,16 @@ main .hero-text{
 }
 
 .paragraph-ul{
-    font-family: cursive;
+    font-family: monospace;
     font-size: 18px;
+    /* letter-spacing: 1.5px; */
     color: black;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-    top: 150px;
+    top: 151px;
     left: 30px;
+    
     position: absolute;
 }
 
@@ -763,7 +766,9 @@ main .hero-text{
     }
 }
 @media (max-width : 1150px) {
-
+    .main-text-h4 {
+        width: 472px;
+    }
 }
 @media (max-width : 1100px) {
     .call{
@@ -961,7 +966,15 @@ main .hero-text{
         left: 175px;
     }
 }
-
+@media (max-width : 900px) {
+    .main-text-h4 {
+        position: absolute;
+        top: 242px;
+        font-size: 23px;
+        width: 400px;
+    }
+    
+}
 @media (max-width : 850px) {
     .call{
         display: none;
@@ -976,7 +989,7 @@ main .hero-text{
     }
 
     .social{
-        background-color: white;
+        background-color: #ffffffe0;
         z-index: 1030;
         padding: 10px;
         border-radius: 10px;
@@ -1067,12 +1080,12 @@ main .hero-text{
     .hero-img{
         width: 270px;
         top: 140px;
-        left: 220px;
+        left: 200px;
         position: absolute;
     }
     .hero-img-bg{
         top: 150px;
-        left: 330px;
+        left: 310px;
         position: absolute;
     }
     main .hero-text {
@@ -1130,6 +1143,7 @@ main .hero-text{
     .hithere{
         font-size: 19px;
     }
+    
     main .main-text {
         font-size: 80px;
         /* top: 500px;
@@ -1193,6 +1207,7 @@ main .hero-text{
         font-size: 19px;
     }
     .location p{
+        width: 81px;
         font-size: 15px;
     }
     .placeholder{
@@ -1226,6 +1241,17 @@ main .hero-text{
         left: 100px;
         position: absolute;
     }
+    .social{
+        background-color: #ffffffe0;
+        z-index: 1030;
+        border: 0.1px #c6c6c6 solid;
+        border-radius: 11px !important;
+        padding: 25px 15px 25px 20px;
+        border-radius: 10px;
+        top: 151px;
+        left: -8px;
+        position: fixed;
+    }
 }
 
 
@@ -1239,11 +1265,11 @@ main .hero-text{
     .hero-img{
         width: 270px;
         top: 130px;
-        left: 200px;
+        left: 180px;
         position: absolute;
     }
     .hero-img-bg{
-        left: 310px;
+        left: 290px;
         position: absolute;
     }    
     .About{
@@ -1302,10 +1328,537 @@ main .hero-text{
         left: 285px;
         position: absolute;
     } 
+    .email{
+        top: 970px;
+        left: 110px;
+        position: absolute;
+    }
+    .location{
+        top: 970px;
+        left: 480px;
+        position: absolute;
+    }
+    .contact-column {
+        top: 970px;
+        left: 355px;
+        position: absolute;
+    }
+    .row {
+        left: 320px;
+        position: absolute;
+    }
+    main .hero-text {
+        left: -105px;
+        position: absolute;
+    }
+    .menu svg {
+        position: absolute;
+        top: -10px;
+        left: 340px;
+    }
+    .skills {
+        top: 1140px;
+        left: 185px;
+        position: absolute;
+    }
+    .icons-style{
+        position: absolute;
+        left: 40px;
+    }
+    .icons-skills{
+        left: 40px;
+        position: absolute;
+    }
+    .About {
+        position: absolute;
+        left: 40px;
+    }
+    .skills {
+        left: 165px;
+        position: absolute;
+    }
+    .row {
+        top: 820px;
+        left: 300px;
+        position: absolute;
+        height: 465px;
+    }
+    .main-text-h4 {
+        width: 364px;
+    }
 }
 @media (max-width : 600px) {
-    
+    .About {
+        position: absolute;
+        left: 90px;
+        width: 350px;
+        height: 500px;
+        top: 1490px;
+    }
+    .main-text-h4 {
+        width: 310px;
+    }
+    .hero-img {
+        width: 270px;
+        top: 130px;
+        left: 130px;
+        position: absolute;
+    }
+    .hero-img-bg {
+        left: 245px;
+        position: absolute;
+    }
+    .menu svg {
+        position: absolute;
+        top: -15px;
+        left: 300px;
+    }
+    .redR {
+        font-size: 64px;
+    }
+    main .main-text {
+        font-size: 64px;
+    }
+    .main-text-h3 {
+        top: 95px;
+        left: 170px;
+        width: 450px;
+        position: absolute;
+        font-size: 34px;
+    }
+    .main-text-h4 {
+        top: 154px;
+        left: 285px;
+        position: absolute;
+        font-size: 18px;
+    }
+    .contact-column{
+        display: none;
+    }
+    .location {
+        top: 973px;
+        left: 400px;
+        position: absolute;
+    }
+    .button-49 {
+        position: absolute;
+        font-size: 15px;
+        top: 230px;
+        width: 160px;
+        height: 72px;
+        left: 170px;
+    }.button-49 p{
+        position: absolute;
+        top: -5px;
+        left: 17px;
+    }
+    .row {
+        left: 270px;
+        position: absolute;
+    }
+    .skills {
+        left: 180px;
+        position: absolute;
+        font-size: 50px;
+    }
+    .icons-style {
+        position: absolute;
+        left: 30px;
+        top: 1250px;
+    }
+    .icons-skills {
+        left: 30px;
+        top: 1350px;
+        position: absolute;
+    }
+
+    .aboutme-title {
+        font-size: 32px;
+    }
+    .aboutme-red {
+        font-size: 32px;
+    }
+    .aboutme-title {
+        top: 20px;
+        left: 25px;
+    }
+    .paragraph {
+        width: 260px;
+        top: 105px;
+        left: 50px;
+        position: absolute;
+    }
+    .paragraph h5 {
+        width: 265px;
+        left: -2px;
+        position: absolute;
+        top: 400px;
+        font-size: 20px;
+    }
+    .dots {
+        height: 120px;
+        top: 213px;
+        left: 0px;
+        position: absolute;
+    }
+    .paragraph-ul {
+        font-family: monospace;
+        font-size: 18px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        top: 191px;
+        left: 30px;
+        position: absolute;
+    }
+    .me2 {
+        height: 95px;
+        top: -12px;
+        left: 258px;
+        position: absolute;
+    }
 }
 @media (max-width : 550px) {
-    
+    .hero-img {
+        width: 270px;
+        top: 110px;
+        left: 110px;
+        position: absolute;
+    }
+    .hero-img-bg {
+        left: 225px;
+        top: 110px;
+        position: absolute;
+    }
+    .main-text-h4 {
+        top: 191px;
+        left: 172px;
+        position: absolute;
+    }    
+    .main-text-h3 {
+        width: 270px;
+    }
+    .button-49 {
+        position: absolute;
+        top: 250px;
+    }
+    .icons-style {
+        width: 400px;
+        position: absolute;
+        left: 50px;
+    }
+    .icons-skills {
+        position: absolute;
+        left: 50px;
+        width: 400px;
+    }
+    .skills {
+        position: absolute;
+        left: 160px;
+        font-size: 45px;
+        width: 235px;
+    }
+    .main-text {
+        width: 292px;
+    }
+    .menu svg {
+        position: absolute;
+        top: -15px;
+        left: 250px;
+    }
+    .placeholder {
+        left: -35px;
+        position: absolute;
+    }
+    .gmail {
+        top: 10px;
+        left: -40px;
+        position: absolute;
+    }
+    .email {
+        left: 90px;
+        position: absolute;
+    }
+    .location {
+        left: 360px;
+        position: absolute;
+    }
+    .row {
+        left: 248px;
+        position: absolute;
+        height: 400px;
+        top: 800px;
+    }
+    .contact-group{
+        position: absolute;
+        top: -50px;
+    }
+    .skills-group{
+        position: absolute;
+        top: -55px;
+    }
+    .About {
+        position: absolute;
+        left: 70px;
+        width: 350px;
+        height: 500px;
+        top: 1490px;
+    }
 }  
+@media (max-width : 500px) {
+    .hero-img {
+        width: 270px;
+        top: 110px;
+        left: 95px;
+        position: absolute;
+    }
+    .hero-img-bg {
+        left: 210px;
+        top: 110px;
+        position: absolute;
+    }
+    .main-text-h4 {
+        top: 191px;
+        left: 172px;
+        position: absolute;
+    }    
+    .main-text-h3 {
+        width: 270px;
+    }
+    .icons-style {
+        width: 400px;
+        position: absolute;
+        left: 35px;
+    }
+    .icons-skills {
+        position: absolute;
+        left: 35px;
+        width: 400px;
+    }
+    .skills {
+        font-size: 40px;
+    }
+    .main-text {
+        width: 292px;
+    }
+    .menu svg {
+        position: absolute;
+        top: -15px;
+        left: 200px;
+    }
+    .placeholder {
+        left: -35px;
+        position: absolute;
+    }
+    .gmail {
+        top: 10px;
+        left: -40px;
+        position: absolute;
+    }
+    .email {
+        left: 90px;
+        position: absolute;
+    }
+    .location {
+        left: 360px;
+        position: absolute;
+    }
+    .row {
+        left: 248px;
+        position: absolute;
+        height: 400px;
+        top: 800px;
+    }
+    .contact-group{
+        position: absolute;
+        top: -50px;
+    }
+    .skills-group{
+        position: absolute;
+        top: -55px;
+    }
+    .About {
+        position: absolute;
+        left: 55px;
+        width: 350px;
+        height: 500px;
+        top: 1490px;
+    }
+    .row {
+        left: 221px;
+        position: absolute;
+        height: 372px;
+        top: 807px;
+    }
+    .location{
+        display: none;
+    }
+    .email {
+        top: 970px;
+        left: 170px;
+        position: absolute;
+    }
+}  
+@media (max-width : 450px) {
+    .hero-img {
+        width: 270px;
+        top: 110px;
+        left: 70px;
+        position: absolute;
+    }
+    .hero-img-bg {
+        left: 185px;
+        top: 110px;
+        position: absolute;
+    }
+    .menu svg {
+        position: absolute;
+        top: -17px;
+        left: 160px;
+    }
+    main .hero-text {
+        left: -115px;
+        position: absolute;
+    }
+    .email {
+        left: 130px;
+        position: absolute;
+    }
+    .row {
+        left: 205px;
+        position: absolute;
+        height: 347px;
+        top: 815px;
+    }
+    .skills {
+        position: absolute;
+        left: 130px;
+    }
+    .icons-style {
+        width: 350px;
+        position: absolute;
+        left: 30px;
+    }
+    .icons-skills {
+        width: 350px;
+        position: absolute;
+        left: 30px;
+    }
+    .icon img {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .icon svg {
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .About {
+        position: absolute;
+        left: 35px;
+    }
+}
+@media (max-width : 425px) {
+    .About {
+        position: absolute;
+        left: 15px;
+    }
+    .row {
+        left: 190px;
+        position: absolute;
+        height: 347px;
+        top: 815px;
+    }
+    .menu svg {
+        position: absolute;
+        top: -17px;
+        left: 140px;
+    }
+    .hero-img {
+        width: 270px;
+        top: 110px;
+        left: 50px;
+        position: absolute;
+    }
+    .hero-img-bg {
+        left: 170px;
+        top: 110px;
+        position: absolute;
+    }
+    main .hero-text {
+        left: -130px;
+        position: absolute;
+    }
+    .skills {
+        position: absolute;
+        left: 115px;
+    }
+    .icons-style {
+        width: 350px;
+        position: absolute;
+        left: 15px;
+    }
+    .icons-skills {
+        width: 350px;
+        position: absolute;
+        left: 15px;
+    }
+}
+@media (max-width : 400px) {
+    .paragraph {
+        left: 35px;
+        position: absolute;
+    }
+    .About {
+        width: 325px;
+    }
+    .me2 {
+        height: 90px;
+        left: 230px;
+        position: absolute;
+    }
+    .menu svg {
+        position: absolute;
+        top: -17px;
+        left: 120px;
+    }
+    .hero-img-bg {
+        left: 165px;
+        top: 110px;
+        position: absolute;
+    }    
+    main .hero-text {
+        left: -140px;
+        position: absolute;
+    }
+    .hero-img {
+        left: 45px;
+        position: absolute;
+    }
+    .row {
+        left: 188px;
+        position: absolute;
+        height: 300px;
+        top: 838px;
+    }
+    .skills {
+        position: absolute;
+        left: 105px;
+    }
+    .icons-style {
+        width: 350px;
+        position: absolute;
+        left: 5px;
+    }
+    .icons-skills {
+        width: 350px;
+        position: absolute;
+        left: 5px;
+    }
+    .email {
+        left: 110px;
+        position: absolute;
+    }
+}
