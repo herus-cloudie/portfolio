@@ -1,6 +1,6 @@
 
 .container{
-    height: 2390px;
+    height: 2890px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 aside{
@@ -63,7 +63,7 @@ ul{
 }
 .column{
     width: 1px;
-    height: 2000px;
+    height: 3500px;
     left: 104px;
     background: #DEE1E6;
     position: absolute;
@@ -447,6 +447,12 @@ main .hero-text{
     padding: 50px;
     border: thick double #33333335;
 }
+.about{
+    width: 700px;
+    height: 400px;
+    padding: 50px;
+    border: thick double #33333335;
+}
 .paragraph{
     width: 422px;
     height: 200px;
@@ -516,11 +522,249 @@ main .hero-text{
     border-radius: 100px;
 }
 
+.sample-session{
+    position: relative;
+    top: 1100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.sample-img{
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    padding: 22px;
+    box-shadow: 0px 0px 5px #F1214F;
+    border-radius: 5px;
+}
+.sample-session-title{
+    color: #383838;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
 
 
 
-
-
+.card {
+    overflow: visible;
+    width: 550px;
+    height: 303px;
+    margin-bottom: 50px;
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #F1214F, #F1214F, #F1214F, #F1214F, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content-1{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-image: url(../public/phone2.png);
+    background-color: #151515;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .back-content-2{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-image: url(../public/food.png);
+    background-color: #151515;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .back-content-3{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-image: url(../public/amlak4.png);
+    background-color: #151515;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer-2 {
+    width: 500px;
+    color: #ffffff88;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 220%;
+  }
+  .card-footer-1 {
+    color: #ffffff88;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 220%;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
 
 
 
@@ -639,7 +883,7 @@ main .hero-text{
     .email{
         width: 170px;
         height: 56px;
-        top: 970px;
+        top: 974px;
         left: 400px;
         position: absolute;
     }
@@ -665,7 +909,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 515px;
+        left: 480px;
         position: absolute;
         color: #383838;
         font-size: 65px;
@@ -717,7 +961,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 470px;
+        left: 435px;
         position: absolute;
     }
     .icons-style{
@@ -807,7 +1051,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 420px;
+        left: 385px;
         position: absolute;
     }
     .icons-style{
@@ -898,6 +1142,7 @@ main .hero-text{
         left: 30px;
         position: absolute;
     }
+
 } 
 @media (max-width : 950px) {
     .call{
@@ -942,7 +1187,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 335px;
+        left: 300px;
         position: absolute;
     }
     .icons-style{
@@ -976,6 +1221,10 @@ main .hero-text{
     
 }
 @media (max-width : 850px) {
+    .sample-session{
+        margin-left: 0px;
+        margin-top: 100px;
+    }
     .call{
         display: none;
     }
@@ -1040,7 +1289,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 285px;
+        left: 250px;
         position: absolute;
     }
     .icons-style{
@@ -1068,8 +1317,6 @@ main .hero-text{
         position: absolute;
     }
 }
-
-
 @media (max-width : 800px) {
     .row {
         left: 380px;
@@ -1110,7 +1357,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 235px;
+        left: 200px;
         position: absolute;
     }
     .icons-style{
@@ -1134,12 +1381,15 @@ main .hero-text{
 
 }
 @media (max-width : 750px) {
-    .menu svg{
+    .about-li{
+        display: none;
+    }
+    /* .menu svg{
         display: block;
     }
     ul{
         display: none;
-    }
+    } */
     .hithere{
         font-size: 19px;
     }
@@ -1226,7 +1476,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 210px;
+        left: 175px;
         position: absolute;
     }
     .icons-style{
@@ -1253,9 +1503,6 @@ main .hero-text{
         position: fixed;
     }
 }
-
-
-
 @media (max-width : 700px) {
     .menu svg{
         position: absolute;
@@ -1301,7 +1548,7 @@ main .hero-text{
     }
     .skills{
         top: 1140px;
-        left: 200px;
+        left: 165px;
         position: absolute;
     }
     .icons-style{
@@ -1358,7 +1605,7 @@ main .hero-text{
     }
     .skills {
         top: 1140px;
-        left: 185px;
+        left: 150px;
         position: absolute;
     }
     .icons-style{
@@ -1374,7 +1621,7 @@ main .hero-text{
         left: 40px;
     }
     .skills {
-        left: 165px;
+        left: 130px;
         position: absolute;
     }
     .row {
@@ -1388,6 +1635,28 @@ main .hero-text{
     }
 }
 @media (max-width : 600px) {
+    .card-footer-2 {
+        width: 320px;
+      }
+      .card-footer-1 {
+        width: 320px;
+      }
+    .card {
+        overflow: visible;
+        width: 400px;
+        height: 700px;
+        margin-bottom: 50px;
+      }
+    .back-content-3{
+        background-image: url(../public/mobile-amlak.png);
+    }
+    .back-content-2{
+        background-image: url(../public/mobile-food.png);
+    }
+    .back-content-1{
+        background-image: url(../public/mobile-phone.png);
+    }
+
     .About {
         position: absolute;
         left: 90px;
@@ -1436,7 +1705,7 @@ main .hero-text{
         display: none;
     }
     .location {
-        top: 973px;
+        top: 943px;
         left: 400px;
         position: absolute;
     }
@@ -1457,7 +1726,7 @@ main .hero-text{
         position: absolute;
     }
     .skills {
-        left: 180px;
+        left: 155px;
         position: absolute;
         font-size: 50px;
     }
@@ -1481,6 +1750,11 @@ main .hero-text{
     .aboutme-title {
         top: 20px;
         left: 25px;
+    }
+    .location {
+        top: 971px;
+        left: 400px;
+        position: absolute;
     }
     .paragraph {
         width: 260px;
@@ -1555,7 +1829,7 @@ main .hero-text{
     }
     .skills {
         position: absolute;
-        left: 160px;
+        left: 135px;
         font-size: 45px;
         width: 235px;
     }
@@ -1578,10 +1852,12 @@ main .hero-text{
     }
     .email {
         left: 90px;
+        top: 940px;
         position: absolute;
     }
     .location {
         left: 360px;
+        top: 940px;
         position: absolute;
     }
     .row {
@@ -1695,12 +1971,25 @@ main .hero-text{
         display: none;
     }
     .email {
-        top: 970px;
+        top: 940px;
         left: 170px;
         position: absolute;
     }
 }  
 @media (max-width : 450px) {
+    .card{
+        overflow: visible;
+        width: 320px;
+        height: 570px;
+        margin-bottom: 50px;
+    }
+    .card-footer-2 {
+        width: 280px;
+      }
+      .card-footer-1 {
+        width: 280px;
+      }
+      
     .hero-img {
         width: 270px;
         top: 110px;
@@ -1729,11 +2018,11 @@ main .hero-text{
         left: 205px;
         position: absolute;
         height: 347px;
-        top: 815px;
+        top: 825px;
     }
     .skills {
         position: absolute;
-        left: 130px;
+        left: 115px;
     }
     .icons-style {
         width: 350px;
@@ -1761,6 +2050,20 @@ main .hero-text{
     }
 }
 @media (max-width : 425px) {
+    .skills {
+        position: absolute;
+        left: 105px;
+    }
+    .icons-style {
+        width: 350px;
+        position: absolute;
+        left: 20px;
+    }
+    .icons-skills {
+        width: 350px;
+        position: absolute;
+        left: 20px;
+    }
     .About {
         position: absolute;
         left: 20px;
@@ -1769,7 +2072,7 @@ main .hero-text{
         left: 190px;
         position: absolute;
         height: 347px;
-        top: 815px;
+        top: 825px;
     }
     .menu svg {
         position: absolute;
@@ -1828,11 +2131,11 @@ main .hero-text{
         left: 188px;
         position: absolute;
         height: 300px;
-        top: 838px;
+        top: 848px;
     }
     .skills {
         position: absolute;
-        left: 115px;
+        left: 100px;
     }
     .icons-style {
         width: 350px;
@@ -1859,12 +2162,17 @@ main .hero-text{
         position: absolute;
         left: 10px;
     }
+    ul {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 28px;
+    }
 
 
 
     .skills {
         position: absolute;
-        left: 105px;
+        left: 90px;
     }
     .icons-style {
         width: 350px;
