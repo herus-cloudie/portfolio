@@ -22,7 +22,7 @@ export default function Home() {
       <header>
         <ul>
           <a href="#portfolio" className="li portfolio">portfolio</a>
-          <a href="#skills" className="li">Tech Stack</a>
+          <a href="#Tech" className="li">Tech Stack</a>
           <a href="#about" className="li about-li">about me</a>
         </ul>
         <CopyToClipboard text={'09394142756'}>
@@ -57,8 +57,8 @@ export default function Home() {
         </div>
       </div>
       <div className="row"/>
-      <div className="about-flex"  >
-        <div className="skills-group" id="skills">
+      <div className="about-flex" id="Tech">
+        <div className="skills-group">
           <h3 className="skills">Tech Stack</h3>
           <div className="icons-style">
             <div className="icon"><img src="/html.png" /></div>
